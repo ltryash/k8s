@@ -16,6 +16,6 @@ spec:
       containers:
         - name: c02
           image: ubuntu
-          command: ["/bin/bash", "-c "," while true; do echo hello world; sleep 5; done"]
+          command: ["/bin/bash", "-c", "while true; do echo hello world; sleep 5; done"]
 
 
