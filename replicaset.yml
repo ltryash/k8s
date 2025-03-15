@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myreplica
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      company: wipro
+  template:
+    metadata:
+      labels:
+        company: wipro
+    spec:
+      containers:
+        - name: c01
+          image: httpd
+          ports:
+            - containerPort: 80
