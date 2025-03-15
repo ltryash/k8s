@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: demoservices
+spec:
+  ports:
+    - port: 1503
+      targetPort: 80
+  selector:
+    name: deployment
+  type: ClusterIP
